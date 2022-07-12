@@ -45,17 +45,11 @@ module.exports = {
     },
     detailSearch: (req, res) => {
         const {searchTerm} = req.body
-        console.log(searchTerm)
-        return
-        var input, filter, ul, li, a, i, txtValue;
-        input = document.getElementById("searchbar").value;
-        filter = input.value.toUpperCase();
-        // ul = document.getElementById("myUL");
-        // li = ul.getElementsByTagName("li");
+        
+        let results = items.filter(item => {
+            return item.name.toLowerCase().includes(searchTerm.toLowerCase())
+        })
     
-        let results = items.filter(item => item.name.startsWith(filter))
-    
-        console.log('adfoighd')
         res.status(200).send(results)
     
     }

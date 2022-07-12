@@ -14,5 +14,13 @@
       "server": "Lawolf",
       "sellerIGN": "nuzziesuwu",
       "imageURL" : "https://flyff-wiki.gpotato.com.br/images/0/04/Historic_Axe.png"
+    },
+    {
+      "id": 3,
+      "name": "Legendary Golden Sword",
+      "price": 39573298573298,
+      "server": "Mushpoie",
+      "sellerIGN": "waifupillow",
+      "imageURL": "https://flyff-wiki.gpotato.com.br/images/9/97/Legendary_Golden_Sword.png"
     }
 ]
