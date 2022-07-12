@@ -1,10 +1,14 @@
 const itemsContainer = document.getElementById('items-container')
 const form = document.getElementById('create-item-form')
+const searchBar = document.getElementById('searchbar')
 
 const baseURL = `http://localhost:4000/api/items`
 
 const itemsCallback = ({ data: items }) => displayItems(items)
-const errCallback = err => console.log(err.response.data)
+const errCallback = err => {
+    console.log('Error happened:')
+    console.log(err.response.data)
+}
 
 const getAllItems = () => axios.get(baseURL).then(itemsCallback).catch(errCallback)
 const createItem = body => {
@@ -13,7 +17,13 @@ const createItem = body => {
 }
 const deleteItem = id => axios.delete(`${baseURL}/${id}`).then(itemsCallback).catch(errCallback)
 const updateItem = (id, type) => axios.put(`${baseURL}/${id}`, {type}).then(itemsCallback).catch(errCallback)
-const detailSearch = () => axios.get(baseURL).then(itemsCallback).catch(errCallback)
+const detailSearch = () => {
+    let body = {}
+
+    body.searchTerm = searchBar.value
+
+    axios.post(`http://localhost:4000/api/searchitems`, body).then(itemsCallback).catch(errCallback)
+}
 
 function submitHandler(e) {
     e.preventDefault()
@@ -71,5 +81,6 @@ function displayItems(arr) {
 }
 
 form.addEventListener('submit', submitHandler)
+searchBar.addEventListener('keyup', detailSearch)
 
 getAllItems()

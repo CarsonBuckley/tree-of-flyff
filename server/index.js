@@ -11,7 +11,7 @@ const {getItems, detailSearch, deleteItem, createItem, updateItem} = require('./
 // ENDPOINTS -------------------------------------------
 
 app.get('/api/items', getItems)
-app.get('api/items', detailSearch)
+app.post('/api/searchitems', detailSearch)
 app.delete('/api/items/:id', deleteItem)
 app.post('/api/items', createItem)
 app.put('/api/items/:id', updateItem)

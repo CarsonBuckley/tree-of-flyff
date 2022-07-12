@@ -44,6 +44,9 @@ module.exports = {
         
     },
     detailSearch: (req, res) => {
+        const {searchTerm} = req.body
+        console.log(searchTerm)
+        return
         var input, filter, ul, li, a, i, txtValue;
         input = document.getElementById("searchbar").value;
         filter = input.value.toUpperCase();
