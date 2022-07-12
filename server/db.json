@@ -1,0 +1,18 @@
+[
+    {
+      "id": 1,
+      "name": "Historic Sword",
+      "price": 1000000,
+      "server": "Mushpoie",
+      "sellerIGN": "rawrxd",
+      "imageURL": "https://flyff-wiki.gpotato.com.br/images/5/5e/Historic_Sword.png" 
+    },
+    {
+      "id": 2,
+      "name": "Historic Axe",
+      "price": 1000000,
+      "server": "Lawolf",
+      "sellerIGN": "nuzziesuwu",
+      "imageURL" : "https://flyff-wiki.gpotato.com.br/images/0/04/Historic_Axe.png"
+    }
+]

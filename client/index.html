@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tree of Flyff</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Tree of Flyff</h1>
+    </header>
+    <main>
+
+        <section id="search-form">
+
+            <form id="search-bar">
+                <input type="text" id="searchbar" onkeyup="detailSearch()" placeholder="Search" />
+                <!-- <button id="search">Search</button> -->
+            </form>
+        </section>
+
+        <section id="section2">
+
+
+            <form id="create-item-form">
+                <input type='text' id="name" placeholder="Name of item" />
+                <input type='text' id="price" placeholder='Price of item' />
+                <input type='text' id="sellerIGN" placeholder='IGN' />
+                <input type='text' id="server" placeholder='Server item is on' />
+                <input type='text' id="img" placeholder='Image URL' />
+                <!-- <section id="ratings-container">
+                <p>Rate the movie:</p>
+                <div id="radio-container">
+                    <label for="one">
+                        <input
+                        type="radio"
+                        name="ratings"
+                        value="1"
+                        id="one"/>
+                        1
+                    </label>
+                    <label for="two">
+                        <input
+                        type="radio"
+                        name="ratings"
+                        value="2"
+                        id="two"/>
+                        2
+                    </label>
+                    <label for="three">
+                        <input
+                        type="radio"
+                        name="ratings"
+                        value="3"
+                        id="three"/>
+                        3
+                    </label>
+                    <label for="four">
+                        <input
+                        type="radio"
+                        name="ratings"
+                        value="4"
+                        id="four"/>
+                        4
+                    </label>
+                    <label for="five">
+                        <input
+                        type="radio"
+                        name="ratings"
+                        value="5"
+                        id="five"/>
+                        5
+                    </label>
+                </div>
+            </section> -->
+                <button>Post item</button>
+            </form>
+
+
+
+            <section id="items-container"></section>
+
+        </section>
+    </main>
+
+    <!-- <script>
+        function searchFunction() {
+            var input, filter, ul, li, a, i, txtValue;
+            input = document.getElementById("searchbar");
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("myUL");
+            li = ul.getElementsByTagName("li");
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                txtValue = a.textContent || a.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+    </script> -->
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

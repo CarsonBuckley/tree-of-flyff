@@ -1,0 +1,218 @@
+@font-face { font-family: Roboto-Black; src: url('Roboto/Roboto-Black.ttf'); } 
+@font-face { font-family: Roboto-Black; font-weight: medium; src: url('Roboto/Roboto-Black.ttf');}
+@font-face { font-family: Roboto-Bold; src: url('Roboto/Roboto-Bold.ttf'); } 
+@font-face { font-family: Roboto-Bold; font-weight: medium; src: url('Roboto/Roboto-Bold.ttf');}
+@font-face { font-family: Roboto-Light; src: url('Roboto/Roboto-Light.ttf'); } 
+@font-face { font-family: Roboto-Light; font-weight: medium; src: url('Roboto/Roboto-Light.ttf');}
+@font-face { font-family: Roboto-Medium; src: url('Roboto/Roboto-Medium.ttf'); } 
+@font-face { font-family: Roboto-Medium; font-weight: medium; src: url('Roboto/Roboto-Medium.ttf');}
+@font-face { font-family: Roboto-Regular; src: url('Roboto/Roboto-Regular.ttf'); } 
+@font-face { font-family: Roboto-Regular; font-weight: medium; src: url('Roboto/Roboto-Regular.ttf');}
+@font-face { font-family: Roboto-Thin; src: url('Roboto/Roboto-Thin.ttf'); } 
+@font-face { font-family: Roboto-Thin; font-weight: medium; src: url('Roboto/Roboto-Thin.ttf');}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+}
+
+body {
+    background-color: #24292F;
+    height: 100vh;
+}
+
+header {
+    height: 80px; 
+    margin-left: 20px;
+    display: flex; 
+    justify-content: left; 
+    align-items: center;
+    color: white;
+}
+
+.search-bar {
+    margin-right: 20px;
+}
+
+#search {
+    /* margin-right: 20px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: flex; 
+    align-items: center;
+    flex-direction: column;
+    /* justify-content: center; */
+    height: 80%;
+}
+
+form {
+    width: 250px;
+    height: 350px;
+    border-radius: 8px;
+    background-color: #161A22;
+    position: relative;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-evenly; 
+    align-items: center;
+    margin: 30px;
+}
+
+#search-form {
+    width: 100%;
+    height: 50px;
+    position: relative;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    margin: 30px;
+    /* padding-bottom: 30px; */
+}
+
+#search-bar {
+    width: 30%;
+    height: 50px;
+    border-radius: 8px;
+    background-color: #161A22;
+    margin: 30px;
+    padding: 10px;
+    /* display: flex; 
+    flex-direction: row;
+    justify-content: left;
+    align-items: left; */
+}
+
+#searchbar {
+    width: 98%;
+    /* height: 50px; */
+}
+
+button {
+    background-color: #347eee;
+    font-family: Roboto-Medium;
+    width: 100px;
+    height: 25px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin: 5px;
+}
+
+input[type='text'] {
+    width: 85%;
+    height: 30px;
+    border: none;
+    border-bottom: 2px solid #24292F;
+    border-radius: 4px;
+    color: #ffffff;
+    background-color: #161B22;
+}
+
+#price-container {
+    width: 85%;
+}
+
+#radio-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#items-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    width: 70%;
+    border-radius: 8px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    /* height: 90vh; */
+}
+
+#section2 {
+    display: flex;
+    /* justify-content: space-between; */
+    width: 90%;
+    /* margin: 30px; */
+}
+
+.item-icon {
+    width: 50px; 
+    height: 50px;
+    border-radius: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    margin-left: 12px;
+}
+
+.item-card {
+    background-color: #161A22;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* margin-top: 1px; */
+    margin-bottom: 1px;
+}
+
+.item-data {
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    justify-content: right;
+    width: 85%;
+    margin-left: 20px;
+}
+
+.item-name {
+    font-size: 18px;
+    margin: 5px 0;
+    color: white;
+}
+
+.item-price {
+    font-size: 15px;
+    margin: 5px 0;
+    color: #347eee;
+}
+
+.item-sellerIGN {
+    font-size: 15px;
+    margin: 5px 0;
+    color: white;
+}
+
+.item-server {
+    font-size: 15px;
+    margin: 5px 0;
+    color: gray;
+}
+
+.sold-button {
+    display: flex;
+    flex-direction: row;
+    align-items: right;
+    justify-content: right;
+    margin-right: 10px;
+}
+
+.btns-container {
+    width: 100%; 
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5px;
+}
+
+.btns-container > button {
+    width: 20px;
+}
